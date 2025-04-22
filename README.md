@@ -1,9 +1,9 @@
-Dự án RESTful API Quản lý Danh sách Công việc
-Tổng quan
+# Dự án RESTful API Quản lý Danh sách Công việc
+# Tổng quan
 Dự án này là một ứng dụng quản lý danh sách công việc (To-do List) đơn giản, được xây dựng với API RESTful sử dụng Flask và giao diện người dùng đồ họa (GUI) sử dụng PyQt5. Ứng dụng cho phép người dùng thực hiện các thao tác tạo, đọc, cập nhật và xóa (CRUD) các công việc, được lưu trữ trong cơ sở dữ liệu SQLite. API và GUI chạy đồng thời, với GUI giao tiếp với API thông qua các yêu cầu HTTP.
 Tính năng
 
-API RESTful:
+# API RESTful:
 GET /todos: Lấy danh sách tất cả công việc.
 POST /todos: Tạo một công việc mới.
 GET /todos/<id>: Lấy thông tin chi tiết của một công việc theo ID.
@@ -11,7 +11,7 @@ PUT /todos/<id>: Cập nhật một công việc cụ thể.
 DELETE /todos/<id>: Xóa một công việc cụ thể.
 
 
-Giao diện người dùng (GUI):
+# Giao diện người dùng (GUI):
 Hiển thị danh sách công việc.
 Cung cấp biểu mẫu để thêm hoặc chỉnh sửa công việc (tiêu đề và mô tả).
 Bao gồm các nút để thêm, cập nhật và xóa công việc.
@@ -21,21 +21,8 @@ Tự động làm mới danh sách công việc sau khi có thay đổi.
 Cơ sở dữ liệu: Sử dụng SQLite để lưu trữ công việc một cách bền vững.
 Chạy đồng thời: Chạy API Flask và GUI PyQt5 cùng lúc bằng cách sử dụng threading.
 
-Cấu trúc dự án
-todo_api_project/
-├── api/
-│   ├── __init__.py
-│   ├── database.py        # Thiết lập và quản lý kết nối cơ sở dữ liệu SQLite
-│   ├── models.py          # Mô hình dữ liệu công việc và các thao tác với cơ sở dữ liệu
-│   └── routes.py          # Các endpoint API của Flask
-├── gui/
-│   ├── __init__.py
-│   └── main_window.py     # Triển khai giao diện GUI bằng PyQt5
-├── main.py                # Điểm bắt đầu để chạy cả API và GUI
-├── requirements.txt       # Các thư viện phụ thuộc của dự án
-└── README.md              # Tài liệu hướng dẫn dự án
 
-Kiến thức cần thiết
+# Kiến thức cần thiết
 Để hiểu và làm việc với dự án này, bạn cần có kiến thức cơ bản về:
 
 Python: Hiểu cú pháp Python, hàm, lớp và module.
@@ -46,25 +33,13 @@ HTTP/REST: Hiểu các khái niệm API RESTful (GET, POST, PUT, DELETE) và mã
 Threading: Kiến thức cơ bản về chạy nhiều tiến trình đồng thời trong Python.
 Môi trường ảo (Virtual Environment): Quen thuộc với việc tạo và sử dụng môi trường ảo Python để quản lý thư viện.
 
-Hướng dẫn cài đặt
-
-Tạo hoặc sao chép thư mục dự án:
-
-Tạo một thư mục có tên todo_api_project và đặt các file dự án theo cấu trúc như trên.
-Hoặc sao chép kho lưu trữ (nếu có).
-
-
-Thiết lập môi trường ảo:
-python -m venv venv
-source venv/bin/activate  # Trên Windows: venv\Scripts\activate
-
-
+# Hướng dẫn cài đặt
 Cài đặt các thư viện phụ thuộc:
 pip install -r requirements.txt
 
 Lệnh này sẽ cài đặt Flask, PyQt5 và requests như được liệt kê trong requirements.txt.
 
-Chạy ứng dụng:
+# Chạy ứng dụng:
 python main.py
 
 
@@ -73,7 +48,7 @@ Giao diện PyQt5 sẽ mở trong một cửa sổ mới.
 
 
 
-Hướng dẫn sử dụng
+# Hướng dẫn sử dụng
 
 Giao diện người dùng (GUI):
 
