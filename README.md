@@ -28,10 +28,8 @@ Chạy đồng thời: Chạy API Flask và GUI PyQt5 cùng lúc bằng cách s�
 Python: Hiểu cú pháp Python, hàm, lớp và module.
 Flask: Quen thuộc với việc tạo API RESTful, định tuyến và xử lý yêu cầu HTTP.
 PyQt5: Kiến thức về cách tạo ứng dụng GUI, bố cục, widget và xử lý sự kiện.
-SQLite: Hiểu cơ bản về cơ sở dữ liệu quan hệ và câu lệnh SQL.
 HTTP/REST: Hiểu các khái niệm API RESTful (GET, POST, PUT, DELETE) và mã trạng thái HTTP.
 Threading: Kiến thức cơ bản về chạy nhiều tiến trình đồng thời trong Python.
-Môi trường ảo (Virtual Environment): Quen thuộc với việc tạo và sử dụng môi trường ảo Python để quản lý thư viện.
 
 # Hướng dẫn cài đặt
 Cài đặt các thư viện phụ thuộc:
@@ -87,20 +85,13 @@ curl -X DELETE http://127.0.0.1:5000/todos/1
 
 
 
-Lưu ý
+# Lưu ý
 
 Cơ sở dữ liệu SQLite (todos.db) được tạo tự động trong thư mục dự án khi ứng dụng khởi động.
 API chạy trên localhost:5000. Hãy đảm bảo cổng này không bị chiếm dụng trước khi chạy ứng dụng.
 GUI sử dụng thư viện requests để giao tiếp với API, vì vậy API phải đang chạy để GUI hoạt động bình thường.
 Ứng dụng sử dụng threading để chạy server Flask và GUI PyQt5 đồng thời. Server Flask chạy trong một luồng daemon để đảm bảo nó kết thúc khi GUI đóng.
 
-Các cải tiến tiềm năng
 
-Thêm xác thực người dùng cho API.
-Triển khai nút chuyển đổi trạng thái hoàn thành trong GUI.
-Thêm kiểm tra đầu vào cho cả API và GUI.
-Nâng cấp GUI với các tính năng như sắp xếp hoặc lọc công việc.
-Thêm ghi log lỗi để hỗ trợ gỡ lỗi.
-
-Giấy phép
+# Giấy phép
 Dự án này được tạo với mục đích học tập và không được cấp phép để sử dụng trong môi trường sản xuất.
